@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     siteName: "AIZU BRAND HALL",
     images: [
       {
-        url: "/placeholder.svg?height=630&width=1200&text=会津の伝統料理こづゆ",
+        url: "/images/kozuyu-dish.jpeg",
         width: 1200,
         height: 630,
         alt: "会津が誇る伝統の汁物こづゆ",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "会津が誇る伝統の汁物こづゆ：400年の歴史と文化を徹底解説",
     description:
       "会津地方を代表する郷土料理「こづゆ」の400年にわたる歴史、干し貝柱の上品なだしと山海の恵み、正月や冠婚葬祭での特別な位置づけ、そして現代への継承課題まで。会津の心を体現する伝統料理の全貌に迫ります。",
-    images: ["/placeholder.svg?height=630&width=1200&text=会津の伝統料理こづゆ"],
+    images: ["/images/kozuyu-dish.jpeg"],
   },
 }
 
@@ -39,7 +39,7 @@ export default function KozuyuArticle() {
       {/* Top Image */}
       <div className="container mx-auto px-4 pt-8 pb-4 text-center">
         <Image
-          src="/placeholder.svg?height=450&width=800&text=会津の伝統料理こづゆ"
+          src="/images/kozuyu-dish.jpeg"
           alt="会津の伝統料理こづゆ"
           width={800}
           height={450}
@@ -222,10 +222,25 @@ export default function KozuyuArticle() {
       <div className="container mx-auto px-4 py-8 max-w-3xl text-center">
         <h3 className="text-xl font-semibold text-gray-700 mb-6">会津の伝統料理をご家庭で</h3>
         <div className="flex flex-col items-center space-y-6">
-          <div className="bg-gray-100 p-8 rounded-lg">
-            <p className="text-gray-600 mb-4">こづゆセットや会津の特産品は</p>
-            <p className="text-lg font-semibold text-gray-800">AIZU BRAND HALLにてお取り扱い予定</p>
-          </div>
+          <a
+            href="https://store.shopping.yahoo.co.jp/aizubrandhall/4571318633342.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block hover:opacity-80 transition-opacity"
+          >
+            <div className="bg-white p-6 rounded-lg shadow-md">
+              <Image
+                src="/images/kozuyu-product-set.jpeg"
+                alt="会津郷土料理 革命 カップこづゆ 5個セット"
+                width={400}
+                height={300}
+                className="rounded-lg mb-4"
+              />
+              <h4 className="text-lg font-bold text-gray-800 mb-2">会津郷土料理 革命 カップこづゆ 5個セット</h4>
+              <p className="text-gray-600 mb-2">お湯を注いで簡単３分！</p>
+              <p className="text-xl font-semibold text-gray-900">2,400円（税・送料込）</p>
+            </div>
+          </a>
         </div>
       </div>
 
