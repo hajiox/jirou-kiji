@@ -1,6 +1,5 @@
 import type { Metadata } from "next"
 import Image from "next/image"
-import Link from "next/link"
 
 // メタデータの設定
 export const metadata: Metadata = {
@@ -380,14 +379,6 @@ export default function RamenJiroArticle() {
       <footer className="bg-gray-100 text-gray-600 py-8 mt-12">
         <div className="container mx-auto px-4 text-center text-sm">
           <p>&copy; 2025 AIZU BRAND HALL. All rights reserved.</p>
-          <div className="mt-2 space-x-4">
-            <Link href="/kozuyu" className="text-xs text-gray-500 hover:underline">
-              こづゆ
-            </Link>
-            <Link href="/" className="text-xs text-gray-500 hover:underline">
-              オーション麺
-            </Link>
-          </div>
         </div>
       </footer>
     </div>
