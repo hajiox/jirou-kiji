@@ -233,15 +233,18 @@ export default function KozuyuArticle() {
         <div className="container mx-auto px-4 text-center text-sm">
           <p>&copy; 2025 AIZU BRAND HALL. All rights reserved.</p>
           <div className="mt-2 space-x-4">
-            <Link href="/kozuyu" className="text-xs text-gray-500 hover:underline">
-              こづゆ
-            </Link>
-            <Link href="/" className="text-xs text-gray-500 hover:underline">
-              オーション麺
-            </Link>
+              <Link href="/karasugike" className="text-xs text-gray-500 hover:underline">
+                辛杉家の憂鬱
+              </Link>
+              <Link href="/kozuyu" className="text-xs text-gray-500 hover:underline">
+                こづゆ
+              </Link>
+              <Link href="/" className="text-xs text-gray-500 hover:underline">
+                オーション麺
+              </Link>
+            </div>
           </div>
-        </div>
-      </footer>
+        </footer>
     </div>
   )
 }
